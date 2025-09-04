@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gayathri:wght@100;400;700&family=Preahvihear&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,12 +9,12 @@
 }
 
 :root {
-    --clr-primary: #700942;
-    --clr-secondary: #5e03a5;
+    --clr-primary: #ce107f;
+    --clr-secondary: #22053a;
     --clr-accent: #00c2cb;
     --clr-dark: #1c1c1c;
     --clr-light: #f2ebd9;
-    --ff-titles: "Preahvihear", sans-serif;
+    --ff-titles: "Chelsea Market", system-ui;
     --ff-texts: "Preahvihear", sans-serif;
 }
 
@@ -29,7 +32,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: 
+    background:
         radial-gradient(circle at 10% 20%, rgba(160, 7, 122, 0.25) 0%, transparent 25%),
         radial-gradient(circle at 90% 70%, rgba(94, 3, 165, 0.3) 0%, transparent 30%),
         radial-gradient(circle at 50% 50%, rgba(0, 194, 203, 0.2) 0%, transparent 40%),
@@ -40,15 +43,21 @@ body::before {
     animation: gradientShift 15s ease infinite alternate;
 }
 
+h2 {
+    font-family: var(--ff-titles);
+}
+
 @keyframes gradientShift {
     0% {
         background-position: 0% 0%;
         transform: scale(1);
     }
+
     50% {
         background-position: 50% 50%;
         transform: scale(1.05);
     }
+
     100% {
         background-position: 100% 100%;
         transform: scale(1);
@@ -63,12 +72,12 @@ body::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: 
-        radial-gradient(2px 2px at 20px 30px, var(--clr-primary), rgba(0,0,0,0)),
-        radial-gradient(2px 2px at 40px 70px, var(--clr-accent), rgba(0,0,0,0)),
-        radial-gradient(1px 1px at 90px 40px, var(--clr-light), rgba(0,0,0,0)),
-        radial-gradient(1px 1px at 120px 80px, var(--clr-secondary), rgba(0,0,0,0)),
-        radial-gradient(2px 2px at 160px 30px, var(--clr-primary), rgba(0,0,0,0));
+    background-image:
+        radial-gradient(2px 2px at 20px 30px, var(--clr-primary), rgba(0, 0, 0, 0)),
+        radial-gradient(2px 2px at 40px 70px, var(--clr-accent), rgba(0, 0, 0, 0)),
+        radial-gradient(1px 1px at 90px 40px, var(--clr-light), rgba(0, 0, 0, 0)),
+        radial-gradient(1px 1px at 120px 80px, var(--clr-secondary), rgba(0, 0, 0, 0)),
+        radial-gradient(2px 2px at 160px 30px, var(--clr-primary), rgba(0, 0, 0, 0));
     background-repeat: repeat;
     background-size: 200px 200px;
     z-index: -1;
@@ -80,6 +89,7 @@ body::after {
     from {
         background-position: 0 0;
     }
+
     to {
         background-position: 200px 200px;
     }
@@ -137,9 +147,9 @@ body::after {
 
 .logo {
     font-family: var(--ff-titles);
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 700;
-    color: var(--clr-primary);
+    color: var(--clr-light);
 }
 
 .hero {
@@ -171,13 +181,14 @@ body::after {
     width: 80%;
     height: 90%;
     background: linear-gradient(45deg, var(--clr-primary), var(--clr-secondary));
-    border-radius: 15px;
+    border-radius: 10px;
     z-index: -1;
     top: 5%;
     left: 10%;
-    opacity: 0.8;
+    opacity: 0.5;
     transform: rotate(5deg);
     transition: transform 0.5s ease;
+
 }
 
 .hero-image:hover::before {
@@ -186,15 +197,13 @@ body::after {
 
 .hero-image img {
     width: 100%;
-    max-width: 300px;
+    max-width: 250px;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 .hero-image img:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(160, 7, 122, 0.4);
 }
 
 .hero-title {
@@ -218,7 +227,7 @@ body::after {
     color: white;
     border: none;
     padding: 12px 30px;
-    border-radius: 30px;
+    border-radius: 5px;
     font-family: var(--ff-texts);
     font-size: 1rem;
     font-weight: 700;
@@ -238,18 +247,25 @@ body::after {
     padding: 0 2rem;
 }
 
-.about, .gallery {
+.container img {
+    height: 450px;
+}
+
+.about,
+.gallery {
     padding: 5rem 0;
 }
 
 .about {
-    background-color: rgba(0, 0, 0, 0.39);
+    background-color: rgba(0, 0, 0, 0.274);
     backdrop-filter: blur(10px);
     border-top: 1px solid rgba(160, 7, 122, 0.2);
     border-bottom: 1px solid rgba(160, 7, 122, 0.2);
+    text-align: center;
 }
 
-.about h2, .gallery h2 {
+.about h2,
+.gallery h2 {
     font-family: var(--ff-titles);
     font-size: 2.5rem;
     margin-bottom: 2rem;
@@ -289,10 +305,6 @@ body::after {
     transform: translateY(-3px);
 }
 
-h2 {
-    font-family: var(--ff-titles);
-}
-
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -326,6 +338,78 @@ h2 {
     border-top: 1px solid rgba(160, 7, 122, 0.3);
 }
 
+
+.seccion {
+    background-color: #5e03a5;
+    min-height: 100vh;
+    display: flex;
+}
+
+.seccion2 {
+    background-color: #700942;
+    min-height: 100vh;
+
+}
+
+.cajita {
+    background-color: aqua;
+    height: 150px;
+    width: 150px;
+
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    height: 700px;
+}
+
+.titulo h1 {
+    font-size: 5rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 30px;
+}
+
+.about-titulo {
+    font-family: var(--ff-titles);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--clr-primary);
+    text-align: center;
+}
+
+.about-item h3 {
+    font-size: 1.8rem;
+}
+
+.about-subtitulo {
+    font-size: 1.5rem;
+    overflow: hidden;
+
+}
+
+.about-subtitulo span {
+    display: inline-block;
+
+}
+
+.prueba {
+    height: 800px;
+    background-color: rgba(22, 22, 22, 0.411);
+}
+
+
 /* Responsive */
 @media (max-width: 968px) {
     .hero-intro {
@@ -333,21 +417,21 @@ h2 {
         text-align: center;
         gap: 2rem;
     }
-    
+
     .hero-title {
         font-size: 2.5rem;
     }
-    
+
     .hero-text {
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     .hero-image {
         order: -1;
     }
-    
+
     .hero-image img {
         max-width: 250px;
     }
@@ -358,21 +442,22 @@ h2 {
         flex-direction: column;
         padding: 1rem;
     }
-    
+
     .menu-list {
         margin-top: 1rem;
         gap: 1.5rem;
     }
-    
+
     .hero-title {
         font-size: 2rem;
     }
-    
+
     .hero-text {
         font-size: 1rem;
     }
-    
-    .about h2, .gallery h2 {
+
+    .about h2,
+    .gallery h2 {
         font-size: 2rem;
     }
 }
@@ -383,12 +468,13 @@ h2 {
         align-items: center;
         gap: 1rem;
     }
-    
+
     .hero-title {
         font-size: 1.8rem;
     }
-    
+
     .gallery-grid {
         grid-template-columns: 1fr;
     }
 }
+
