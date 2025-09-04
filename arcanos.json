@@ -1,0 +1,414 @@
+{
+    "arcanosMayores": {
+        "titulo": "Los 22 Arcanos Mayores del Tarot",
+        "descripcion": "Serie de arquetipos universales que representan las etapas del Viaje del Loco, un camino de crecimiento espiritual y psicológico.",
+        "descripcionImagenes": "Las imágenes referenciadas suelen basarse en el Rider-Waite-Smith, el mazo de tarot más popular y ampliamente utilizado como referencia.",
+        "arcanos": [
+            {
+                "numero": 0,
+                "nombre": "El Loco",
+                "img": "el_loco.jpg",
+                "keywords": [
+                    "Inicio",
+                    "inocencia",
+                    "espontaneidad",
+                    "potencial",
+                    "aventura"
+                ],
+                "significado": "Representa el comienzo del viaje, el potencial puro y el salto de fe hacia lo desconocido.",
+                "simbolosClave": [
+                    "Precipicio",
+                    "mochila",
+                    "perro",
+                    "sol"
+                ]
+            },
+            {
+                "numero": 1,
+                "nombre": "El Mago",
+                "img": "el_mago.jpg",
+                "keywords": [
+                    "Manifestación",
+                    "poder",
+                    "habilidad",
+                    "voluntad",
+                    "recursos"
+                ],
+                "significado": "Domina los elementos para manifestar su realidad. Poder personal y acción consciente.",
+                "simbolosClave": [
+                    "Varita",
+                    "elementos sobre la mesa",
+                    "infinito sobre la cabeza"
+                ]
+            },
+            {
+                "numero": 2,
+                "nombre": "La Sacerdotisa",
+                "img": "la_sacerdotisa.jpg",
+                "keywords": [
+                    "Intuición",
+                    "inconsciente",
+                    "misterio",
+                    "sabiduría interior",
+                    "potencial"
+                ],
+                "significado": "Guarda los secretos entre el mundo consciente e inconsciente. Invita a confiar en la intuición.",
+                "simbolosClave": [
+                    "Velo",
+                    "luna",
+                    "columnas Jakin y Boaz",
+                    "libro de la Torah"
+                ]
+            },
+            {
+                "numero": 3,
+                "nombre": "La Emperatriz",
+                "img": "la_emperatriz.jpg",
+                "keywords": [
+                    "Abundancia",
+                    "fertilidad",
+                    "creatividad",
+                    "naturaleza",
+                    "maternidad"
+                ],
+                "significado": "La madre universal, el arquetipo de la creación y la abundancia en todos los sentidos.",
+                "simbolosClave": [
+                    "Trono en la naturaleza",
+                    "campo de trigo",
+                    "río",
+                    "símbolo de Venus"
+                ]
+            },
+            {
+                "numero": 4,
+                "nombre": "El Emperador",
+                "img": "el_emperador.jpg",
+                "keywords": [
+                    "Estructura",
+                    "autoridad",
+                    "orden",
+                    "estabilidad",
+                    "ley"
+                ],
+                "significado": "Estructura y orden. Representa la autoridad, la lógica y la estabilidad.",
+                "simbolosClave": [
+                    "Trono de piedra",
+                    "cetro",
+                    "armadura",
+                    "montañas áridas"
+                ]
+            },
+            {
+                "numero": 5,
+                "nombre": "El Hierofante",
+                "img": "el_hierofante.jpg",
+                "keywords": [
+                    "Tradición",
+                    "creencias",
+                    "conformidad",
+                    "educación",
+                    "institución"
+                ],
+                "significado": "Representa las tradiciones, instituciones establecidas y las creencias grupales.",
+                "simbolosClave": [
+                    "Llaves cruzadas",
+                    "gesto de bendición",
+                    "acólitos"
+                ]
+            },
+            {
+                "numero": 6,
+                "nombre": "Los Enamorados",
+                "img": "los_enamorados.jpg",
+                "keywords": [
+                    "Amor",
+                    "unión",
+                    "decisiones",
+                    "valores",
+                    "relaciones"
+                ],
+                "significado": "Representa una elección crucial basada en valores profundos y autenticidad.",
+                "simbolosClave": [
+                    "Ángel Rafael",
+                    "árbol de la vida y del conocimiento",
+                    "desnudez"
+                ]
+            },
+            {
+                "numero": 7,
+                "nombre": "El Carro",
+                "img": "el_carro.jpg",
+                "keywords": [
+                    "Voluntad",
+                    "control",
+                    "victoria",
+                    "determinación",
+                    "autocontrol"
+                ],
+                "significado": "Triunfo de la voluntad consciente sobre fuerzas conflictivas. Autocontrol y movimiento.",
+                "simbolosClave": [
+                    "Esfinges blancas y negras",
+                    "armadura",
+                    "corona de laurel",
+                    "riendas"
+                ]
+            },
+            {
+                "numero": 8,
+                "nombre": "La Fuerza",
+                "img": "la_fuerza.jpg",
+                "keywords": [
+                    "Fuerza interior",
+                    "coraje",
+                    "compasión",
+                    "paciencia",
+                    "mansedumbre"
+                ],
+                "significado": "Fuerza interior para domar bestias interiores con amor y compasión, no con fuerza bruta.",
+                "simbolosClave": [
+                    "Mujer y león",
+                    "infinito sobre la cabeza"
+                ]
+            },
+            {
+                "numero": 9,
+                "nombre": "El Ermitaño",
+                "img": "el_ermitano.jpg",
+                "keywords": [
+                    "Introspección",
+                    "guía",
+                    "soledad",
+                    "búsqueda interior",
+                    "sabiduría"
+                ],
+                "significado": "Viaje de introspección y búsqueda de la luz interior. Necesidad de un mentor o guía interna.",
+                "simbolosClave": [
+                    "Lámpara",
+                    "capa",
+                    "báculo",
+                    "montaña"
+                ]
+            },
+            {
+                "numero": 10,
+                "nombre": "La Rueda de la Fortuna",
+                "img": "rueda_de_la_fortuna.jpg",
+                "keywords": [
+                    "Destino",
+                    "ciclos",
+                    "suerte",
+                    "karma",
+                    "puntos de inflexión"
+                ],
+                "significado": "Representa los ciclos inevitables de la vida, giros del destino y eventos fuera de nuestro control.",
+                "simbolosClave": [
+                    "Rueda",
+                    "esfinge",
+                    "Anubis",
+                    "serpiente",
+                    "cuatro evangelistas"
+                ]
+            },
+            {
+                "numero": 11,
+                "nombre": "La Justicia",
+                "img": "la_justicia.jpg",
+                "keywords": [
+                    "Justicia",
+                    "equilibrio",
+                    "causa y efecto",
+                    "verdad",
+                    "karma"
+                ],
+                "significado": "Equilibrio y accountability. Consecuencias de nuestras acciones y decisiones justas.",
+                "simbolosClave": [
+                    "Espada",
+                    "balanza",
+                    "corona"
+                ]
+            },
+            {
+                "numero": 12,
+                "nombre": "El Colgado",
+                "img": "el_colgado.jpg",
+                "keywords": [
+                    "Rendición",
+                    "perspectiva",
+                    "sacrificio",
+                    "pausa",
+                    "dejar ir"
+                ],
+                "significado": "Sacrificio voluntario para ganar una perspectiva superior. Rendición y nueva iluminación.",
+                "simbolosClave": [
+                    "Postura invertida",
+                    "halo",
+                    "expresión serena"
+                ]
+            },
+            {
+                "numero": 13,
+                "nombre": "La Muerte",
+                "img": "la_muerte.jpg",
+                "keywords": [
+                    "Transformación",
+                    "finales",
+                    "cambio",
+                    "transición",
+                    "renovación"
+                ],
+                "significado": "Transformación radical. Fin de un ciclo para permitir el comienzo de uno nuevo.",
+                "simbolosClave": [
+                    "Armadura",
+                    "bandera negra con rosa",
+                    "sol naciente"
+                ]
+            },
+            {
+                "numero": 14,
+                "nombre": "La Templanza",
+                "img": "la_templanza.jpg",
+                "keywords": [
+                    "Equilibrio",
+                    "moderación",
+                    "paciencia",
+                    "síntesis",
+                    "alquimia"
+                ],
+                "significado": "Encontrar equilibrio y armonía. Alquimia interior mezclando aspectos opuestos.",
+                "simbolosClave": [
+                    "Ángel mezclando agua",
+                    "pie en agua y tierra",
+                    "iris"
+                ]
+            },
+            {
+                "numero": 15,
+                "nombre": "El Diablo",
+                "img": "el_diablo.jpg",
+                "keywords": [
+                    "Atadura",
+                    "materialismo",
+                    "tentación",
+                    "sombra",
+                    "adicción"
+                ],
+                "significado": "Ataduras autoimpuestas, vicios, patrones negativos y la parte sombría de nuestra naturaleza.",
+                "simbolosClave": [
+                    "Cadenas flojas",
+                    "antorcha invertida",
+                    "pose reflejada"
+                ]
+            },
+            {
+                "numero": 16,
+                "nombre": "La Torre",
+                "img": "la_torre.jpg",
+                "keywords": [
+                    "Cambio abrupto",
+                    "revelación",
+                    "caos",
+                    "destrucción",
+                    "iluminación"
+                ],
+                "significado": "Cambio súbito y disruptivo que derrumba estructuras falsas. Liberación necesaria.",
+                "simbolosClave": [
+                    "Rayo",
+                    "corona cayendo",
+                    "llamas",
+                    "personas cayendo"
+                ]
+            },
+            {
+                "numero": 17,
+                "nombre": "La Estrella",
+                "img": "la_estrella.jpg",
+                "keywords": [
+                    "Esperanza",
+                    "fe",
+                    "renovación",
+                    "sanación",
+                    "guía"
+                ],
+                "significado": "Esperanza, sanación y renovación tras la destrucción. Reconexión con el propósito.",
+                "simbolosClave": [
+                    "Estrella central",
+                    "agua vertida",
+                    "desnudez"
+                ]
+            },
+            {
+                "numero": 18,
+                "nombre": "La Luna",
+                "img": "la_luna.jpg",
+                "keywords": [
+                    "Inconsciente",
+                    "ilusión",
+                    "miedo",
+                    "ansiedad",
+                    "intuición"
+                ],
+                "significado": "Viaje a través de ilusiones, miedos ancestrales y el inconsciente. Confusión e intuición.",
+                "simbolosClave": [
+                    "Luna con rostro",
+                    "cangrejo",
+                    "perros/lobos",
+                    "caminos bifurcados"
+                ]
+            },
+            {
+                "numero": 19,
+                "nombre": "El Sol",
+                "img": "el_sol.jpg",
+                "keywords": [
+                    "Alegría",
+                    "éxito",
+                    "vitalidad",
+                    "claridad",
+                    "optimismo"
+                ],
+                "significado": "Alegría pura, éxito, claridad mental y vitalidad. Reconexión con el niño interior.",
+                "simbolosClave": [
+                    "Sol radiante",
+                    "niño en caballo",
+                    "muro",
+                    "girasol"
+                ]
+            },
+            {
+                "numero": 20,
+                "nombre": "El Juicio",
+                "img": "el_juicio.jpg",
+                "keywords": [
+                    "Renacimiento",
+                    "llamado interior",
+                    "absolución",
+                    "evaluación",
+                    "despertar"
+                ],
+                "significado": "Momento de 'llamado' o despertar espiritual. Evaluación de la vida y renacimiento con propósito.",
+                "simbolosClave": [
+                    "Ángel con trompeta",
+                    "personas saliendo de tumbas",
+                    "cruz en bandera"
+                ]
+            },
+            {
+                "numero": 21,
+                "nombre": "El Mundo",
+                "img": "el_mundo.jpg",
+                "keywords": [
+                    "Logro",
+                    "completitud",
+                    "unidad",
+                    "realización",
+                    "armonía"
+                ],
+                "significado": "Realización absoluta e integración de todas las lecciones. Cierre de un gran ciclo.",
+                "simbolosClave": [
+                    "Bailarina en laurel",
+                    "cuatro seres (evangelistas/elementos)"
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,86 @@
+{
+    "viajeDelHeroe": {
+        "titulo": "El Viaje del Héroe y su correlación con los Arcanos Mayores",
+        "descripcion": "El Viaje del Héroe (monomito de Joseph Campbell) encuentra un paralelo perfecto en la secuencia de los Arcanos Mayores, donde El Loco es el héroe que se transforma a través de las etapas.",
+        "etapas": [
+            {
+                "faseHeroe": "El Mundo Ordinario",
+                "descripcionFase": "La vida normal y cotidiana del héroe antes de que la aventura comience.",
+                "arcanoAsociado": "El Loco (0)",
+                "explicacion": "El Loco es la inocencia y el potencial puro antes del llamado, al borde del precipicio de lo conocido."
+            },
+            {
+                "faseHeroe": "La Llamada de la Aventura",
+                "descripcionFase": "Al héroe se le presenta un problema, desafío o aventura para dejar lo ordinario.",
+                "arcanoAsociado": "El Mago (I) & La Sacerdotisa (II)",
+                "explicacion": "El Mago es el llamado a actuar; La Sacerdotisa es el llamado interior e intuitivo."
+            },
+            {
+                "faseHeroe": "El Rechazo de la Llamada",
+                "descripcionFase": "El héroe siente miedo y se resiste al cambio, prefiriendo la seguridad.",
+                "arcanoAsociado": "El Hierofante (V)",
+                "explicacion": "Representa las tradiciones, reglas y 'deber ser' que mantienen al héroe atado al status quo."
+            },
+            {
+                "faseHeroe": "Encuentro con el Mentor",
+                "descripcionFase": "El héroe encuentra un guía que lo prepara para la aventura.",
+                "arcanoAsociado": "La Emperatriz (III) & El Emperador (IV)",
+                "explicacion": "La Emperatriz enseña creatividad y confianza; El Emperador provee estructura y disciplina."
+            },
+            {
+                "faseHeroe": "Cruzando el Umbral",
+                "descripcionFase": "El héroe se compromete con la aventura y deja su mundo ordinario.",
+                "arcanoAsociado": "Los Enamorados (VI)",
+                "explicacion": "Representa la decisión crucial de saltar a lo desconocido guiado por los valores profundos."
+            },
+            {
+                "faseHeroe": "Pruebas, Aliados y Enemigos",
+                "descripcionFase": "El héroe se enfrenta a desafíos que lo preparan para mayores dificultades.",
+                "arcanoAsociado": "El Carro (VII) & La Fuerza (VIII)",
+                "explicacion": "El Carro es la prueba del control externo; La Fuerza es la prueba interna de domar miedos y pasiones."
+            },
+            {
+                "faseHeroe": "Acercamiento a la Guarida más Profunda",
+                "descripcionFase": "Preparación y reflexión antes de la prueba central.",
+                "arcanoAsociado": "El Ermitaño (IX)",
+                "explicacion": "Búsqueda interior de sabiduría y conexión con la guía interna para la oscuridad que se avecina."
+            },
+            {
+                "faseHeroe": "La Prueba Suprema",
+                "descripcionFase": "El héroe enfrenta su mayor miedo y la posibilidad de la muerte (física o espiritual).",
+                "arcanoAsociado": "Rueda de la Fortuna (X), Justicia (XI), El Colgado (XII), La Muerte (XIII)",
+                "explicacion": "Fase de transformación radical: destino, consecuencias, rendición y muerte simbólica del viejo yo."
+            },
+            {
+                "faseHeroe": "La Recompensa",
+                "descripcionFase": "Tras vencer, el héroe se lleva una recompensa (conocimiento, objeto de poder).",
+                "arcanoAsociado": "La Templanza (XIV)",
+                "explicacion": "La recompensa es el equilibrio, la paz y la maestría interior tras integrar los opuestos."
+            },
+            {
+                "faseHeroe": "El Camino de Vuelta",
+                "descripcionFase": "El héroe debe volver a su mundo, a menudo perseguido por fuerzas que desafió.",
+                "arcanoAsociado": "El Diablo (XV)",
+                "explicacion": "Representa las ataduras finales y tentaciones que tratan de impedir el regreso con la recompensa."
+            },
+            {
+                "faseHeroe": "La Resurrección",
+                "descripcionFase": "Última prueba purificadora en el umbral de regreso a casa.",
+                "arcanoAsociado": "La Torre (XVI)",
+                "explicacion": "Catarsis explosiva que derrumba las últimas estructuras falsas e ilusiones. Purificación final."
+            },
+            {
+                "faseHeroe": "El Regreso con el Elixir",
+                "descripcionFase": "El héroe regresa transformado y lleva la recompensa que sanará su mundo ordinario.",
+                "arcanoAsociado": "La Estrella (XVII), La Luna (XVIII), El Sol (XIX)",
+                "explicacion": "Regresa integrado: trae esperanza (Estrella), ha integrado su inconsciente (Luna) y brinda alegría y claridad (Sol)."
+            },
+            {
+                "faseHeroe": "Meta Final: El Héroe Maestro",
+                "descripcionFase": "La realización final y el propósito superior del héroe.",
+                "arcanoAsociado": "El Juicio (XX) & El Mundo (XXI)",
+                "explicacion": "El Juicio es la resurrección final y el llamado a un propósito superior. El Mundo es la realización e integración total, la culminación del viaje."
+            }
+        ]
+    }
+}
