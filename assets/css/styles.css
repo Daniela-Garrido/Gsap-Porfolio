@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Gayathri:wght@100;400;700&family=Preahvihear&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
 
 * {
@@ -9,11 +8,11 @@
 }
 
 :root {
-    --clr-primary: #ce107f;
+    --clr-primary: #b305a4;
     --clr-secondary: #22053a;
-    --clr-accent: #00c2cb;
-    --clr-dark: #1c1c1c;
-    --clr-light: #f2ebd9;
+    --clr-accent: #71faff;
+    --clr-dark: #000000;
+    --clr-light: #ffffff;
     --ff-titles: "Chelsea Market", system-ui;
     --ff-texts: "Preahvihear", sans-serif;
 }
@@ -24,7 +23,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Fondo mejorado y simplificado */
+/* Fondo */
 body::before {
     content: '';
     position: fixed;
@@ -34,10 +33,10 @@ body::before {
     height: 100%;
     background:
         radial-gradient(circle at 10% 20%, rgba(160, 7, 122, 0.25) 0%, transparent 25%),
-        radial-gradient(circle at 90% 70%, rgba(94, 3, 165, 0.3) 0%, transparent 30%),
-        radial-gradient(circle at 50% 50%, rgba(0, 194, 203, 0.2) 0%, transparent 40%),
-        radial-gradient(circle at 80% 10%, rgba(160, 7, 122, 0.2) 0%, transparent 20%),
-        radial-gradient(circle at 20% 90%, rgba(94, 3, 165, 0.25) 0%, transparent 25%);
+        radial-gradient(circle at 90% 70%, rgba(70, 2, 122, 0.747) 0%, transparent 30%),
+        radial-gradient(circle at 50% 50%, rgba(0, 193, 203, 0.322) 0%, transparent 40%),
+        radial-gradient(circle at 80% 10%, rgba(190, 4, 143, 0.384) 0%, transparent 20%),
+        radial-gradient(circle at 20% 90%, rgba(95, 3, 165, 0.534) 0%, transparent 25%);
     background-color: var(--clr-dark);
     z-index: -2;
     animation: gradientShift 15s ease infinite alternate;
@@ -285,10 +284,11 @@ body::after {
 
 .skills {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 1rem;
     margin-top: 2rem;
+   
 }
 
 .skill {
@@ -363,13 +363,22 @@ body::after {
     justify-content: center;
     align-items: center;
     margin: 30px;
-    height: 700px;
+    height: 300px;
 }
 
 .titulo h1 {
     font-size: 5rem;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.tituloimg {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 300px;
+    margin-bottom: 80px;
 
 }
 
@@ -573,3 +582,10 @@ body::after {
         max-width: 300px;
     }
 }
+
+.imgloco1 {
+    height: 702px;
+    margin: 5px;
+}
+
+

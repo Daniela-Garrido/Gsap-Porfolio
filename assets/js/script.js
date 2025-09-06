@@ -97,8 +97,8 @@ gsap.from(`.container`, {
 gsap.from(`.imgloco`, {
     y: 100,
     opacity: 0,
-    duration: 1,
-    delay: 0.5,
+    duration: 1.5,
+    delay: 1,
     scrollTrigger: ".imgloco",
 })
 
@@ -108,4 +108,6 @@ gsap.from(`.prueba`, {
     duration: 1,
     scrollTrigger: ".prueba",
 })
+
+
 

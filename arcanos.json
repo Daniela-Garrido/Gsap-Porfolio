@@ -7,7 +7,7 @@
             {
                 "numero": 0,
                 "nombre": "El Loco",
-                "img": "el_loco.jpg",
+                "img": "./assets/img/tarot/0.jpg",
                 "keywords": [
                     "Inicio",
                     "inocencia",
@@ -15,7 +15,7 @@
                     "potencial",
                     "aventura"
                 ],
-                "significado": "Representa el comienzo del viaje, el potencial puro y el salto de fe hacia lo desconocido.",
+                "significado": "Representa el comienzo del viaje, el potencial puro y el salto de fe hacia lo desconocido. Un nuevo comienzo se emprenda con los brazos abiertos y con alegría.",
                 "simbolosClave": [
                     "Precipicio",
                     "mochila",
@@ -26,15 +26,16 @@
             {
                 "numero": 1,
                 "nombre": "El Mago",
-                "img": "el_mago.jpg",
+                "img": "./assets/img/tarot/1.jpg",
                 "keywords": [
                     "Manifestación",
+                    "Mercurio",
                     "poder",
                     "habilidad",
                     "voluntad",
                     "recursos"
                 ],
-                "significado": "Domina los elementos para manifestar su realidad. Poder personal y acción consciente.",
+                "significado": "Cuando sientas un impulso o una fuerte necesidad de hacer algo, sigue esa intuición y las cosas podrán concretarse. Domina los elementos para manifestar su realidad. Poder personal y acción consciente.",
                 "simbolosClave": [
                     "Varita",
                     "elementos sobre la mesa",
@@ -44,15 +45,16 @@
             {
                 "numero": 2,
                 "nombre": "La Sacerdotisa",
-                "img": "la_sacerdotisa.jpg",
+                "img": "./assets/img/tarot/2.jpg",
                 "keywords": [
                     "Intuición",
+                    "Luna",
                     "inconsciente",
                     "misterio",
                     "sabiduría interior",
                     "potencial"
                 ],
-                "significado": "Guarda los secretos entre el mundo consciente e inconsciente. Invita a confiar en la intuición.",
+                "significado": " La carta muestra que para conocer toda la verdad sobre algo, debemos usar todos los recursos disponibles, como nuestra intuición, nuestra capacidad de persuasión y la reflexión. Guarda los secretos entre el mundo consciente e inconsciente. Invita a confiar en la intuición.",
                 "simbolosClave": [
                     "Velo",
                     "luna",
@@ -63,15 +65,16 @@
             {
                 "numero": 3,
                 "nombre": "La Emperatriz",
-                "img": "la_emperatriz.jpg",
+                "img": "./assets/img/tarot/3.jpg",
                 "keywords": [
                     "Abundancia",
+                    "Venus",
                     "fertilidad",
                     "creatividad",
                     "naturaleza",
                     "maternidad"
                 ],
-                "significado": "La madre universal, el arquetipo de la creación y la abundancia en todos los sentidos.",
+                "significado": "La madre universal, el arquetipo de la creación y la abundancia en todos los sentidos. Esta carta generalmente indica un buen presagio, así como logros y éxito.",
                 "simbolosClave": [
                     "Trono en la naturaleza",
                     "campo de trigo",
@@ -82,15 +85,17 @@
             {
                 "numero": 4,
                 "nombre": "El Emperador",
-                "img": "el_emperador.jpg",
+                "img": "./assets/img/tarot/4.jpg",
                 "keywords": [
                     "Estructura",
+                    "Júpiter",
+                    "Aries",
                     "autoridad",
                     "orden",
                     "estabilidad",
                     "ley"
                 ],
-                "significado": "Estructura y orden. Representa la autoridad, la lógica y la estabilidad.",
+                "significado": "Puede ser importante buscar el consejo de una figura de autoridad como tu padre u otra figura paterna antes de tomar decisiones importantes. Estructura y orden. Representa la autoridad, la lógica y la estabilidad.",
                 "simbolosClave": [
                     "Trono de piedra",
                     "cetro",
@@ -101,15 +106,16 @@
             {
                 "numero": 5,
                 "nombre": "El Hierofante",
-                "img": "el_hierofante.jpg",
+                "img": "./assets/img/tarot/5.jpg",
                 "keywords": [
                     "Tradición",
+                    "Tauro",
                     "creencias",
                     "conformidad",
                     "educación",
                     "institución"
                 ],
-                "significado": "Representa las tradiciones, instituciones establecidas y las creencias grupales.",
+                "significado": "La investigación, el estudio y el asesoramiento, además de ser formas de hacer las cosas de forma más tradicional, pueden ser el camino por seguir para resolver la situación actual. Representa las tradiciones, instituciones establecidas y las creencias grupales.",
                 "simbolosClave": [
                     "Llaves cruzadas",
                     "gesto de bendición",
@@ -119,15 +125,16 @@
             {
                 "numero": 6,
                 "nombre": "Los Enamorados",
-                "img": "los_enamorados.jpg",
+                "img": "./assets/img/tarot/6.jpg",
                 "keywords": [
                     "Amor",
+                    "Géminis",
                     "unión",
                     "decisiones",
                     "valores",
                     "relaciones"
                 ],
-                "significado": "Representa una elección crucial basada en valores profundos y autenticidad.",
+                "significado": "Si tu corazón te dice que sigas un camino, confía en tus instintos. Representa una elección crucial basada en valores profundos y autenticidad.",
                 "simbolosClave": [
                     "Ángel Rafael",
                     "árbol de la vida y del conocimiento",
@@ -137,15 +144,16 @@
             {
                 "numero": 7,
                 "nombre": "El Carro",
-                "img": "el_carro.jpg",
+                "img": "./assets/img/tarot/7.jpg",
                 "keywords": [
                     "Voluntad",
+                    "Cáncer",
                     "control",
                     "victoria",
                     "determinación",
                     "autocontrol"
                 ],
-                "significado": "Triunfo de la voluntad consciente sobre fuerzas conflictivas. Autocontrol y movimiento.",
+                "significado": "Significa que debes tomar las riendas de tu destino y estar preparado para aprovechar las oportunidades que se presentan. Triunfo de la voluntad consciente sobre fuerzas conflictivas. Autocontrol y movimiento.",
                 "simbolosClave": [
                     "Esfinges blancas y negras",
                     "armadura",
@@ -156,15 +164,16 @@
             {
                 "numero": 8,
                 "nombre": "La Fuerza",
-                "img": "la_fuerza.jpg",
+                "img": "./assets/img/tarot/8.jpg",
                 "keywords": [
                     "Fuerza interior",
+                    "Leo",
                     "coraje",
                     "compasión",
                     "paciencia",
                     "mansedumbre"
                 ],
-                "significado": "Fuerza interior para domar bestias interiores con amor y compasión, no con fuerza bruta.",
+                "significado": "Indica que para lograr tus objetivos, también necesitarás autocontrol para domar a tus propios leones internos. Fuerza interior interiores con amor y compasión, no con fuerza bruta.",
                 "simbolosClave": [
                     "Mujer y león",
                     "infinito sobre la cabeza"
@@ -173,9 +182,10 @@
             {
                 "numero": 9,
                 "nombre": "El Ermitaño",
-                "img": "el_ermitano.jpg",
+                "img": "./assets/img/tarot/9.jpg",
                 "keywords": [
                     "Introspección",
+                    "Virgo",
                     "guía",
                     "soledad",
                     "búsqueda interior",
@@ -192,7 +202,7 @@
             {
                 "numero": 10,
                 "nombre": "La Rueda de la Fortuna",
-                "img": "rueda_de_la_fortuna.jpg",
+                "img": "./assets/img/tarot/10.jpg",
                 "keywords": [
                     "Destino",
                     "ciclos",
@@ -200,7 +210,7 @@
                     "karma",
                     "puntos de inflexión"
                 ],
-                "significado": "Representa los ciclos inevitables de la vida, giros del destino y eventos fuera de nuestro control.",
+                "significado": " Has sembrado y regado tu cultivo, ahora es el momento de cosechar buenos frutos. Representa los ciclos inevitables de la vida, giros del destino y eventos fuera de nuestro control.",
                 "simbolosClave": [
                     "Rueda",
                     "esfinge",
@@ -212,15 +222,17 @@
             {
                 "numero": 11,
                 "nombre": "La Justicia",
-                "img": "la_justicia.jpg",
+                "img": "./assets/img/tarot/11.jpg",
                 "keywords": [
                     "Justicia",
+                    "Libra",
                     "equilibrio",
                     "causa y efecto",
+                    "Neptuno",
                     "verdad",
                     "karma"
                 ],
-                "significado": "Equilibrio y accountability. Consecuencias de nuestras acciones y decisiones justas.",
+                "significado": "El significado básico de la letra a menudo se refiere a decisiones equilibradas y justas. Equilibrio y accountability. Consecuencias de nuestras acciones y decisiones justas.",
                 "simbolosClave": [
                     "Espada",
                     "balanza",
@@ -230,15 +242,16 @@
             {
                 "numero": 12,
                 "nombre": "El Colgado",
-                "img": "el_colgado.jpg",
+                "img": "./assets/img/tarot/12.jpg",
                 "keywords": [
                     "Rendición",
+                    "Neptuno",
                     "perspectiva",
                     "sacrificio",
                     "pausa",
                     "dejar ir"
                 ],
-                "significado": "Sacrificio voluntario para ganar una perspectiva superior. Rendición y nueva iluminación.",
+                "significado": "Es posible que te estés aferrando a algo que no te brinda satisfacción en la cuestión actual, como un amor no correspondido o nocivo. Sacrificio voluntario para ganar una perspectiva superior. Rendición y nueva iluminación.",
                 "simbolosClave": [
                     "Postura invertida",
                     "halo",
@@ -248,15 +261,16 @@
             {
                 "numero": 13,
                 "nombre": "La Muerte",
-                "img": "la_muerte.jpg",
+                "img": "./assets/img/tarot/13.jpg",
                 "keywords": [
                     "Transformación",
+                    "Escorpio",
                     "finales",
                     "cambio",
                     "transición",
                     "renovación"
                 ],
-                "significado": "Transformación radical. Fin de un ciclo para permitir el comienzo de uno nuevo.",
+                "significado": "La Muerte conlleva la promesa de mejoras tan pronto como dejes a un lado lo que se interpone en tu camino. Tiene que ver con finales, pero también conlleva la posibilidad de nuevos comienzos, cambios y transformaciones. Transformación radical.",
                 "simbolosClave": [
                     "Armadura",
                     "bandera negra con rosa",
@@ -266,15 +280,16 @@
             {
                 "numero": 14,
                 "nombre": "La Templanza",
-                "img": "la_templanza.jpg",
+                "img": "./assets/img/tarot/14.jpg",
                 "keywords": [
                     "Equilibrio",
+                    " Sagitario",
                     "moderación",
                     "paciencia",
                     "síntesis",
                     "alquimia"
                 ],
-                "significado": "Encontrar equilibrio y armonía. Alquimia interior mezclando aspectos opuestos.",
+                "significado": "Cuando la carta aparece en una consulta, básicamente significa equilibrio y sugiere armonía para la situación en cuestión. Por tanto, es una carta que sugiere más pensamiento que acción. Alquimia interior mezclando aspectos opuestos.",
                 "simbolosClave": [
                     "Ángel mezclando agua",
                     "pie en agua y tierra",
@@ -284,15 +299,16 @@
             {
                 "numero": 15,
                 "nombre": "El Diablo",
-                "img": "el_diablo.jpg",
+                "img": "./assets/img/tarot/15.jpg",
                 "keywords": [
                     "Atadura",
+                    "Capricornio",
                     "materialismo",
                     "tentación",
                     "sombra",
                     "adicción"
                 ],
-                "significado": "Ataduras autoimpuestas, vicios, patrones negativos y la parte sombría de nuestra naturaleza.",
+                "significado": "Debes preguntarte qué deseas y qué te impide tener éxito en algo.  Ataduras autoimpuestas, vicios, patrones negativos y la parte sombría de nuestra naturaleza. Asume las características capricornianas y toma las riendas de la situación.",
                 "simbolosClave": [
                     "Cadenas flojas",
                     "antorcha invertida",
@@ -302,15 +318,16 @@
             {
                 "numero": 16,
                 "nombre": "La Torre",
-                "img": "la_torre.jpg",
+                "img": "./assets/img/tarot/16.jpg",
                 "keywords": [
                     "Cambio abrupto",
+                    "Marte",
                     "revelación",
                     "caos",
                     "destrucción",
                     "iluminación"
                 ],
-                "significado": "Cambio súbito y disruptivo que derrumba estructuras falsas. Liberación necesaria.",
+                "significado": "Piensa en una estructura o cimiento que se derrumba. Una relación, un empleo, una amistad y, en algunos casos, incluso estructuras físicas. Cambio súbito y disruptivo que derrumba estructuras falsas. Liberación necesaria.",
                 "simbolosClave": [
                     "Rayo",
                     "corona cayendo",
@@ -321,15 +338,16 @@
             {
                 "numero": 17,
                 "nombre": "La Estrella",
-                "img": "la_estrella.jpg",
+                "img": "./assets/img/tarot/17.jpg",
                 "keywords": [
                     "Esperanza",
+                    "Acuario",
                     "fe",
                     "renovación",
                     "sanación",
                     "guía"
                 ],
-                "significado": "Esperanza, sanación y renovación tras la destrucción. Reconexión con el propósito.",
+                "significado": "Cuando aparece, indica un momento en el que las cosas empiezan a salir bien. Esperanza, sanación y renovación tras la destrucción. Reconexión con el propósito.",
                 "simbolosClave": [
                     "Estrella central",
                     "agua vertida",
@@ -339,15 +357,17 @@
             {
                 "numero": 18,
                 "nombre": "La Luna",
-                "img": "la_luna.jpg",
+                "img": "./assets/img/tarot/18.jpg",
                 "keywords": [
                     "Inconsciente",
+                    "Cáncer",
+                    "Piscis",
                     "ilusión",
                     "miedo",
                     "ansiedad",
                     "intuición"
                 ],
-                "significado": "Viaje a través de ilusiones, miedos ancestrales y el inconsciente. Confusión e intuición.",
+                "significado": "Cuando La Luna aparece, sugiere que tus emociones y tu intuición deben prevalecer en la decisión final. Viaje a través de ilusiones, miedos ancestrales y el inconsciente. Confusión e intuición.",
                 "simbolosClave": [
                     "Luna con rostro",
                     "cangrejo",
@@ -358,7 +378,7 @@
             {
                 "numero": 19,
                 "nombre": "El Sol",
-                "img": "el_sol.jpg",
+                "img": "./assets/img/tarot/19.jpg",
                 "keywords": [
                     "Alegría",
                     "éxito",
@@ -366,7 +386,7 @@
                     "claridad",
                     "optimismo"
                 ],
-                "significado": "Alegría pura, éxito, claridad mental y vitalidad. Reconexión con el niño interior.",
+                "significado": "El Sol aporta energía para actuar, nos llena de confianza e ilumina nuestro camino. Alegría pura, éxito, claridad mental y vitalidad. Reconexión con el niño interior.",
                 "simbolosClave": [
                     "Sol radiante",
                     "niño en caballo",
@@ -377,15 +397,16 @@
             {
                 "numero": 20,
                 "nombre": "El Juicio",
-                "img": "el_juicio.jpg",
+                "img": "./assets/img/tarot/20.jpg",
                 "keywords": [
                     "Renacimiento",
+                    "Pluton",
                     "llamado interior",
                     "absolución",
                     "evaluación",
                     "despertar"
                 ],
-                "significado": "Momento de 'llamado' o despertar espiritual. Evaluación de la vida y renacimiento con propósito.",
+                "significado": "Este Arcano Mayor indica que es hora de reflexionar sobre la situación o sobre tu vida. Momento de 'llamado' o despertar espiritual. Evaluación de la vida y renacimiento con propósito.",
                 "simbolosClave": [
                     "Ángel con trompeta",
                     "personas saliendo de tumbas",
@@ -395,7 +416,7 @@
             {
                 "numero": 21,
                 "nombre": "El Mundo",
-                "img": "el_mundo.jpg",
+                "img": "./assets/img/tarot/21.jpg",
                 "keywords": [
                     "Logro",
                     "completitud",
@@ -403,7 +424,7 @@
                     "realización",
                     "armonía"
                 ],
-                "significado": "Realización absoluta e integración de todas las lecciones. Cierre de un gran ciclo.",
+                "significado": " Este Arcano Mayor anuncia un nuevo comienzo e indica que el cambio es inevitable. Realización absoluta e integración de todas las lecciones. Cierre de un gran ciclo.",
                 "simbolosClave": [
                     "Bailarina en laurel",
                     "cuatro seres (evangelistas/elementos)"
