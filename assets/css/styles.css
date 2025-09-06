@@ -343,7 +343,7 @@ body::after {
     justify-content: center;
     align-items: center;
     margin: 30px;
-    height: 300px;
+    height: 250px;
 }
 
 .titulo h1 {
@@ -354,10 +354,8 @@ body::after {
 }
 
 .titulo img {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    height: 700px;
+    height: 600px;
+    margin-top: 10px;
 
 }
 
@@ -365,8 +363,7 @@ body::after {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
-    margin-top: 2rem;
-    padding: 30px;
+    margin: 20px;
 }
 
 .about-titulo {
@@ -390,11 +387,6 @@ body::after {
 .about-subtitulo span {
     display: inline-block;
 
-}
-
-.prueba {
-    height: 800px;
-    background-color: rgba(22, 22, 22, 0.411);
 }
 
 

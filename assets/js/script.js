@@ -81,17 +81,19 @@ gsap.from(`.about-item`, {
 })
 
 gsap.from(`.logo`, {
-    x: -100,
+    x: -150,
     opacity: 0,
-    duration: .5,
+    duration: 1,
+    scale:2,
+
 })
 
-gsap.from(`.container`, {
+gsap.from(`.dice`, {
     opacity: 0,
     duration: 1,
     delay: 0.5,
     y: 50,
-    scrollTrigger: ".container",
+    scrollTrigger: ".dice",
 })
 
 gsap.from(`.imgloco`, {
@@ -102,12 +104,25 @@ gsap.from(`.imgloco`, {
     scrollTrigger: ".imgloco",
 })
 
-gsap.from(`.prueba`, {
-    y: 100,
+gsap.from(`.arcanos`, {
     opacity: 0,
     duration: 1,
-    scrollTrigger: ".prueba",
+    delay: 0.5,
+    y: 50,
+    scrollTrigger: ".arcanos",
 })
+
+gsap.from(`.consejos`, {
+    opacity: 0,
+    duration: 1,
+    delay: 0.5,
+    y: 50,
+    scrollTrigger: ".consejos",
+})
+
+
+
+
 
 
 
