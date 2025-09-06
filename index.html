@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/tirada.css">
+    <link rel="stylesheet" href="assets/css/cartas.css">
     <link rel="icon" type="image/svg+xml" href="assets/img/index/playing-cards-svgrepo-com.svg">
     <title>Mistico espiral</title>
 </head>
@@ -12,13 +14,13 @@
 <body>
 
     <header class="header">
+        <img style="height: 50px;" src="assets/img/index/klipartz.com (3).png" alt="">
         <p class="logo">MISTICO ESPIRAL</p>
         <nav class="menu">
             <ul class="menu-list">
-                <li class="menu-item" data-section="home">Inicio</li>
-                <li class="menu-item" data-section="tarot">Tarot</li>
-                <li class="menu-item" data-section="hero">Camino del Héroe</li>
-                <li class="menu-item" data-section="alquimia">Alquimia</li>
+                <li class="menu-item" data-section="tarot"><a href="#about">Busca tu carta</a></li>
+                <li class="menu-item" data-section="tarot"><a href="#tarot-reading">Tirada de Tarot</a></li>
+                <li class="menu-item" data-section="tarot"><a href="#tarot-reading">Tarot</a></li>
             </ul>
         </nav>
     </header>
@@ -34,15 +36,16 @@
                     <div class="hero-info">
                         <h1 class="hero-title">EL TAROT, LA ALQUIMIA Y <br> EL CAMINO DEL HEROE</h1>
                         <p class="hero-text">Esencialmente, es la travesía de un héroe que sale de su mundo ordinario para enfrentarse a una serie de desafíos, obtiene una victoria y regresa a casa transformado.</p>
-                        <button class="cta-button">IR A PREDICCIONES</button>
+                        <button class="cta-button" ><a href="#tarot-reading">IR A PREDICCIONES</a></button>
+    
                     </div>
                 </div>
             </div>
 
             <section class="about"> 
                 <div class="container">
-                    <h2>EL VIAJE DEL LOCO</h2>
-                    <img class="imgloco" src="assets/img/pngegg (35).png" alt=""> <br>
+                    <h2>QUE NOS DICE EL TAROT?</h2>
+                    <img class="imgloco" src="assets/img/index/klipartz.com (7).png" alt=""> <br>
                     <p>El Viaje del Loco representa el inicio del camino espiritual, el comienzo de una aventura llena de posibilidades. Como el arcano número 0, simboliza el potencial puro, la inocencia y la fe necesaria para embarcarse en lo desconocido.</p>
                     <div class="skills">
                         <span class="skill">Tarot Evolutivo</span>
@@ -55,7 +58,7 @@
             <section class="mov">
                 <section class="titulo">
                     <h1>Una nueva vision</h1>
-                    <img class="imgloco1" src="assets/img/index/pngegg (30).png" alt=""> 
+                    <img src="assets/img/index/pngegg (30).png" alt=""> 
                 </section>
                 <br>
                 <h2 class="about-titulo">Historia</h2>
@@ -79,7 +82,8 @@
 
             <section class="about">
                 <div class="container">
-                    <h2>BUSCA EL SIGNIFICADO DE LAS CARTAS DEL TAROT</h2>
+                    <h2>BUSCA EL SIGNIFICADO DE LOS ARCANOS MAYORES</h2>
+                    <img style="height: 250px; width: 150px;" src="assets/img/index/klipartz.com (5).png" alt="">
                     <div class="search-container">
                         <input type="text" id="card-search" placeholder="Buscar carta...">
                         <button id="search-button">Buscar</button>
@@ -90,40 +94,50 @@
                 </div>
             </section>
         </section>
+        <br>
 
-            <section class="gallery">
-                <div class="container">
-                    <h2>Arcanos Mayores</h2>
-                    <div class="gallery-grid" id="major-arcana">
-                        <!-- Las cartas se cargarán aquí mediante JavaScript -->
-                    </div>
+       <section class="tarot-reading" id="tarot-reading">
+    <div class="container">
+        <h2>CONSEJOS DEL TAROT</h2>
+        <p class="section-description">Realiza una tirada de 3 cartas para obtener insights sobre tu situación actual, desafíos y potencial. Al final, recibe un consejo especial.</p>
+        
+        <div class="reading-container">
+            <button class="close-reading" id="close-reading">×</button>
+            
+            <button id="draw-cards" class="cta-button">Realizar Tirada</button>
+            
+            <div class="cards-container">
+                <div class="card-slot">
+                    <h3>Presente</h3>
+                    <div class="card-placeholder" id="card-1"></div>
                 </div>
-            </section>
-
-
-        <!-- Sección de Tarot -->
-        <section id="tarot" class="section">
-            <div class="container">
-                <h2>Los Arcanos Mayores del Tarot</h2>
-                <div id="tarot-content"></div>
+                <div class="card-slot">
+                    <h3>Desafío</h3>
+                    <div class="card-placeholder" id="card-2"></div>
+                </div>
+                <div class="card-slot">
+                    <h3>Potencial</h3>
+                    <div class="card-placeholder" id="card-3"></div>
+                </div>
             </div>
-        </section>
-
-        <!-- Sección de Camino del Héroe -->
-        <section id="hero" class="section">
-            <div class="container">
-                <h2>El Viaje del Héroe</h2>
-                <div id="hero-journey-content"></div>
+            
+            <div class="advice-button-container" id="advice-button-container">
+                <button id="get-advice" class="cta-button secondary">Recibir Consejo</button>
             </div>
-        </section>
-
-        <!-- Sección de Alquimia -->
-        <section id="alquimia" class="section">
-            <div class="container">
-                <h2>Las Fases de la Alquimia</h2>
-                <div id="alchemy-content"></div>
+            
+            <div class="advice-section" id="advice-section">
+                <div class="advice-card">
+                    <h3>Consejo del Tarot</h3>
+                    <div class="card-placeholder" id="advice-card"></div>
+                </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
+<br>
+
+
+
 
     </main>
 
