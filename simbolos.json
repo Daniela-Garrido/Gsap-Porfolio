@@ -1,0 +1,256 @@
+{
+    "simbolos_alquimicos": [
+        {
+            "id": 1,
+            "nombre": "Oro",
+            "simbolo": "☉",
+            "elemento": "Metal",
+            "significado": "Perfección espiritual, iluminación, realización del verdadero ser",
+            "propiedades": [
+                "Sabiduría divina",
+                "Pureza",
+                "Inmortalidad"
+            ],
+            "color": "#FFD700",
+            "planeta": "Sol"
+        },
+        {
+            "id": 2,
+            "nombre": "Plata",
+            "simbolo": "☽",
+            "elemento": "Metal",
+            "significado": "Intuición, psique, aspecto femenino de la conciencia",
+            "propiedades": [
+                "Reflexión",
+                "Receptividad",
+                "Emociones"
+            ],
+            "color": "#C0C0C0",
+            "planeta": "Luna"
+        },
+        {
+            "id": 3,
+            "nombre": "Cobre",
+            "simbolo": "♀",
+            "elemento": "Metal",
+            "significado": "Belleza, equilibrio, amor y armonía",
+            "propiedades": [
+                "Atracción",
+                "Creatividad",
+                "Belleza"
+            ],
+            "color": "#B87333",
+            "planeta": "Venus"
+        },
+        {
+            "id": 4,
+            "nombre": "Hierro",
+            "simbolo": "♂",
+            "elemento": "Metal",
+            "significado": "Fuerza, voluntad, coraje y resistencia",
+            "propiedades": [
+                "Fortaleza",
+                "Determinación",
+                "Protección"
+            ],
+            "color": "#A9A9A9",
+            "planeta": "Marte"
+        },
+        {
+            "id": 5,
+            "nombre": "Mercurio",
+            "simbolo": "☿",
+            "elemento": "Metal líquido",
+            "significado": "Transformación, mediación, comunicación entre planos",
+            "propiedades": [
+                "Adaptabilidad",
+                "Movimiento",
+                "Trasmutación"
+            ],
+            "color": "#E6E6FA",
+            "planeta": "Mercurio"
+        },
+        {
+            "id": 6,
+            "nombre": "Estaño",
+            "simbolo": "♃",
+            "elemento": "Metal",
+            "significado": "Expansión, optimismo, crecimiento espiritual",
+            "propiedades": [
+                "Expansión",
+                "Abundancia",
+                "Optimismo"
+            ],
+            "color": "#C0C0C0",
+            "planeta": "Júpiter"
+        },
+        {
+            "id": 7,
+            "nombre": "Plomo",
+            "simbolo": "♄",
+            "elemento": "Metal",
+            "significado": "Materialidad, limitación, pruebas terrenales",
+            "propiedades": [
+                "Estabilidad",
+                "Paciencia",
+                "Disciplina"
+            ],
+            "color": "#36454F",
+            "planeta": "Saturno"
+        },
+        {
+            "id": 8,
+            "nombre": "Antimonio",
+            "simbolo": "🜺",
+            "elemento": "Metaloide",
+            "significado": "Naturaleza salvaje, instinto animal, purificación",
+            "propiedades": [
+                "Purificación",
+                "Revelación",
+                "Transformación"
+            ],
+            "color": "#7D7D7D",
+            "planeta": "Tierra"
+        },
+        {
+            "id": 9,
+            "nombre": "Arsénico",
+            "simbolo": "🜹",
+            "elemento": "Metaloide",
+            "significado": "Transformación radical, muerte y renacimiento",
+            "propiedades": [
+                "Cambio radical",
+                "Transmutación",
+                "Renacimiento"
+            ],
+            "color": "#3B444B",
+            "planeta": "Plutón"
+        },
+        {
+            "id": 10,
+            "nombre": "Azufre",
+            "simbolo": "🜍",
+            "elemento": "No metal",
+            "significado": "Alma, conciencia, principio activo masculino",
+            "propiedades": [
+                "Voluntad",
+                "Energía vital",
+                "Conciencia"
+            ],
+            "color": "#FFD700",
+            "planeta": "Sol"
+        },
+        {
+            "id": 11,
+            "nombre": "Sal",
+            "simbolo": "🜔",
+            "elemento": "Mineral",
+            "significado": "Cuerpo, materia, sabiduría terrenal",
+            "propiedades": [
+                "Estabilidad",
+                "Preservación",
+                "Manifestación"
+            ],
+            "color": "#F5F5F5",
+            "planeta": "Tierra"
+        },
+        {
+            "id": 12,
+            "nombre": "Agua",
+            "simbolo": "△",
+            "elemento": "Agua",
+            "significado": "Emociones, intuición, flujo y purificación",
+            "propiedades": [
+                "Purificación",
+                "Emoción",
+                "Intuición"
+            ],
+            "color": "#1E90FF",
+            "planeta": "Luna"
+        },
+        {
+            "id": 13,
+            "nombre": "Fuego",
+            "simbolo": "🜂",
+            "elemento": "Fuego",
+            "significado": "Transformación, pasión, energía purificadora",
+            "propiedades": [
+                "Transformación",
+                "Purificación",
+                "Energía"
+            ],
+            "color": "#FF4500",
+            "planeta": "Marte"
+        },
+        {
+            "id": 14,
+            "nombre": "Aire",
+            "simbolo": "🜁",
+            "elemento": "Aire",
+            "significado": "Intelecto, comunicación, pensamiento y libertad",
+            "propiedades": [
+                "Intelecto",
+                "Comunicación",
+                "Libertad"
+            ],
+            "color": "#87CEEB",
+            "planeta": "Mercurio"
+        },
+        {
+            "id": 15,
+            "nombre": "Tierra",
+            "simbolo": "🜃",
+            "elemento": "Tierra",
+            "significado": "Estabilidad, materialidad, manifestación y crecimiento",
+            "propiedades": [
+                "Estabilidad",
+                "Crecimiento",
+                "Manifestación"
+            ],
+            "color": "#8B4513",
+            "planeta": "Saturno"
+        },
+        {
+            "id": 16,
+            "nombre": "Filosófico",
+            "simbolo": "🜨",
+            "elemento": "Éter",
+            "significado": "Unión de opuestos, piedra filosofal, realización espiritual",
+            "propiedades": [
+                "Unificación",
+                "Perfección",
+                "Trasmutación"
+            ],
+            "color": "#9370DB",
+            "planeta": "Sol"
+        },
+        {
+            "id": 17,
+            "nombre": "Vitriolo",
+            "simbolo": "🜖",
+            "elemento": "Compuesto",
+            "significado": "Conocimiento interior, autodescubrimiento, iluminación",
+            "propiedades": [
+                "Revelación",
+                "Iluminación",
+                "Purificación"
+            ],
+            "color": "#2E8B57",
+            "planeta": "Venus"
+        },
+        {
+            "id": 18,
+            "nombre": "Crisopeya",
+            "simbolo": "⦶",
+            "elemento": "Proceso",
+            "significado": "Arte de transmutar metales en oro, perfección material",
+            "propiedades": [
+                "Trasmutación",
+                "Perfección",
+                "Abundancia"
+            ],
+            "color": "#DAA520",
+            "planeta": "Sol"
+        }
+    ]
+}

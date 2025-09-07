@@ -67,7 +67,7 @@ gsap.from(`.about-titulo`, {
 
 gsap.from(`.about-subtitulo span`, {
     y: 100,
-    duration: 1,
+    duration: .8,
     stagger: 0.2,
     scrollTrigger: ".about-subtitulo span",
 })
@@ -88,37 +88,342 @@ gsap.from(`.logo`, {
 
 })
 
-gsap.from(`.dice`, {
+gsap.from(`.about-inicio`, {
     opacity: 0,
     duration: 1,
     delay: 0.5,
     y: 50,
-    scrollTrigger: ".dice",
+    scrollTrigger: ".about-inicio",
 })
 
-gsap.from(`.imgloco`, {
+gsap.from(`.tetragramaton`, {
     y: 100,
     opacity: 0,
     duration: 1.5,
     delay: 1,
-    scrollTrigger: ".imgloco",
+    rotate: 180,
+    scrollTrigger: ".tetragramaton",
 })
 
-gsap.from(`.arcanos`, {
-    opacity: 0,
-    duration: 1,
-    delay: 0.5,
-    y: 50,
-    scrollTrigger: ".arcanos",
-})
 
-gsap.from(`.consejos`, {
-    opacity: 0,
-    duration: 1,
-    delay: 0.5,
-    y: 50,
-    scrollTrigger: ".consejos",
-})
+
+
+
+
+
+
+// Cargar y mostrar los símbolos alquímicos
+   document.addEventListener('DOMContentLoaded', function() {
+            const symbolsContainer = document.getElementById('symbols-container');
+            const searchInput = document.getElementById('symbol-search');
+            const searchButton = document.getElementById('search-symbol-button');
+            const suggestionsContainer = document.getElementById('search-suggestions');
+            const closeResultsButton = document.getElementById('close-results');
+            const initialMessage = document.getElementById('initial-message');
+            const symbolDetailView = document.getElementById('symbol-detail');
+            const closeDetailButton = document.getElementById('close-detail');
+            const detailContent = document.getElementById('detail-content');
+            
+            let symbolsData = [];
+
+            // Cargar el JSON
+            fetch('simbolos.json')
+                .then(response => response.json())
+                .then(data => {
+                    symbolsData = data.simbolos_alquimicos;
+                })
+                .catch(error => {
+                    console.error('Error cargando el archivo JSON:', error);
+                    initialMessage.innerHTML = '<p>Error al cargar los símbolos. Asegúrate de que el archivo simbolos.json esté disponible.</p>';
+                });
+            
+            // Función para mostrar los símbolos en la cuadrícula
+            function displaySymbols(symbols) {
+                symbolsContainer.innerHTML = '';
+                
+                if (symbols.length === 0) {
+                    symbolsContainer.innerHTML = '<p class="no-results">No se encontraron símbolos que coincidan con tu búsqueda.</p>';
+                    return;
+                }
+                
+                symbols.forEach(symbol => {
+                    const symbolCard = document.createElement('div');
+                    symbolCard.className = 'symbol-card';
+                    symbolCard.addEventListener('click', () => showSymbolDetail(symbol));
+                    
+                    symbolCard.innerHTML = `
+                        <div class="symbol-header">
+                            <div class="symbol-icon">${symbol.simbolo}</div>
+                            <div>
+                                <h3 class="symbol-name">${symbol.nombre}</h3>
+                                <span class="symbol-element">${symbol.elemento}</span>
+                            </div>
+                        </div>
+                        
+                        <p class="symbol-meaning">${symbol.significado}</p>
+                        
+                        <ul class="symbol-properties">
+                            ${symbol.propiedades.map(prop => `<li>${prop}</li>`).join('')}
+                        </ul>
+                        
+                        <div class="symbol-footer">
+                            <div class="symbol-color">
+                                <div class="color-dot" style="background-color: ${symbol.color}"></div>
+                                <span>${symbol.color}</span>
+                            </div>
+                            <div class="symbol-planet">${symbol.planeta}</div>
+                        </div>
+                    `;
+                    
+                    symbolsContainer.appendChild(symbolCard);
+                });
+                
+                // Mostrar la cuadrícula y el botón de cerrar
+                symbolsContainer.style.display = 'grid';
+                closeResultsButton.style.display = 'block';
+                initialMessage.style.display = 'none';
+            }
+            
+            // Función para mostrar el detalle de un símbolo
+            function showSymbolDetail(symbol) {
+                detailContent.innerHTML = `
+                    <div class="detail-header">
+                        <div class="detail-icon">${symbol.simbolo}</div>
+                        <h2 class="detail-name">${symbol.nombre}</h2>
+                        <span class="detail-element">${symbol.elemento}</span>
+                    </div>
+                    
+                    <div class="detail-content">
+                        <div>
+                            <h3>Significado</h3>
+                            <p class="detail-meaning">${symbol.significado}</p>
+                            
+                            <div class="detail-properties">
+                                <h4>Propiedades</h4>
+                                <ul>
+                                    ${symbol.propiedades.map(prop => `<li>${prop}</li>`).join('')}
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="detail-info">
+                            <h4>Información Adicional</h4>
+                            <div class="detail-info-item">
+                                <span>Color:</span>
+                                <span>${symbol.color}</span>
+                            </div>
+                            <div class="detail-info-item">
+                                <span>Planeta:</span>
+                                <span>${symbol.planeta}</span>
+                            </div>
+                            <div class="detail-info-item">
+                                <span>Elemento:</span>
+                                <span>${symbol.elemento}</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                
+                symbolDetailView.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+            }
+            
+            // Función para buscar símbolos
+            function searchSymbols(query) {
+                if (!query.trim()) {
+                    symbolsContainer.style.display = 'none';
+                    closeResultsButton.style.display = 'none';
+                    initialMessage.style.display = 'block';
+                    return;
+                }
+                
+                const searchString = query.toLowerCase();
+                const filteredSymbols = symbolsData.filter(symbol => {
+                    return (
+                        symbol.nombre.toLowerCase().includes(searchString) ||
+                        symbol.elemento.toLowerCase().includes(searchString) ||
+                        symbol.planeta.toLowerCase().includes(searchString) ||
+                        symbol.propiedades.some(prop => prop.toLowerCase().includes(searchString))
+                    );
+                });
+                
+                displaySymbols(filteredSymbols);
+            }
+            
+            // Función para mostrar sugerencias
+            function showSuggestions(query) {
+                if (!query.trim()) {
+                    suggestionsContainer.style.display = 'none';
+                    return;
+                }
+                
+                const searchString = query.toLowerCase();
+                const matchingSymbols = symbolsData.filter(symbol => 
+                    symbol.nombre.toLowerCase().includes(searchString)
+                );
+                
+                if (matchingSymbols.length > 0) {
+                    suggestionsContainer.innerHTML = matchingSymbols
+                        .map(symbol => 
+                            `<div class="suggestion-item" data-name="${symbol.nombre}">${symbol.nombre}</div>`
+                        )
+                        .join('');
+                    suggestionsContainer.style.display = 'block';
+                } else {
+                    suggestionsContainer.style.display = 'none';
+                }
+            }
+            
+            // Event listeners
+            searchInput.addEventListener('input', function() {
+                showSuggestions(this.value);
+            });
+            
+            searchInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    searchSymbols(this.value);
+                    suggestionsContainer.style.display = 'none';
+                }
+            });
+            
+            searchButton.addEventListener('click', function() {
+                searchSymbols(searchInput.value);
+                suggestionsContainer.style.display = 'none';
+            });
+            
+            suggestionsContainer.addEventListener('click', function(e) {
+                if (e.target.classList.contains('suggestion-item')) {
+                    const symbolName = e.target.getAttribute('data-name');
+                    searchInput.value = symbolName;
+                    searchSymbols(symbolName);
+                    suggestionsContainer.style.display = 'none';
+                }
+            });
+            
+            closeResultsButton.addEventListener('click', function() {
+                symbolsContainer.style.display = 'none';
+                closeResultsButton.style.display = 'none';
+                initialMessage.style.display = 'block';
+                searchInput.value = '';
+            });
+            
+            closeDetailButton.addEventListener('click', function() {
+                symbolDetailView.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            });
+            
+            // Cerrar sugerencias al hacer clic fuera
+            document.addEventListener('click', function(e) {
+                if (!searchInput.contains(e.target) && 
+                    !suggestionsContainer.contains(e.target) &&
+                    !searchButton.contains(e.target)) {
+                    suggestionsContainer.style.display = 'none';
+                }
+            });
+        });
+
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Calculadora de numerología
+    const calculateButton = document.getElementById('calculate-number');
+    if (calculateButton) {
+        calculateButton.addEventListener('click', calculateLifePathNumber);
+    }
+    
+    function calculateLifePathNumber() {
+        const day = document.getElementById('day').value;
+        const month = document.getElementById('month').value;
+        const year = document.getElementById('year').value;
+        
+        if (!day || !month || !year) {
+            alert('Por favor, completa todos los campos');
+            return;
+        }
+        
+        // Calcular número de camino de vida
+        let lifePath = reduceNumber(parseInt(day)) + reduceNumber(parseInt(month)) + reduceNumber(parseInt(year));
+        lifePath = reduceNumber(lifePath);
+        
+        // Mostrar resultado
+        const resultElement = document.getElementById('number-result');
+        resultElement.innerHTML = `
+            <div class="number-result-card">
+                <div class="result-number">${lifePath}</div>
+                <h3>Tu número de camino de vida</h3>
+                <p>Este número revela tu propósito esencial y las lecciones que viniste a aprender en esta vida.</p>
+            </div>
+        `;
+    }
+    
+    function reduceNumber(num) {
+        while (num > 9 && num !== 11 && num !== 22 && num !== 33) {
+            let sum = 0;
+            while (num > 0) {
+                sum += num % 10;
+                num = Math.floor(num / 10);
+            }
+            num = sum;
+        }
+        return num;
+    }
+    
+    // Interactividad para la rueda celta
+    const sabbaths = document.querySelectorAll('.sabbath');
+    const sabbathInfo = document.querySelector('.sabbath-info');
+    
+    const sabbathData = {
+        samhain: {
+            title: "Samhain",
+            date: "31 de Octubre - 1 de Noviembre",
+            description: "El Año Nuevo Celta, cuando el velo entre mundos es más delgado. Momento para honrar a los ancestros, soltar lo que ha muerto y recibir sabiduría del otro lado.",
+            ritual: "Crea un altar para tus ancestros, escribe cartas de despedida a lo que debe irse y practica adivinación para el año venidero."
+        },
+        yule: {
+            title: "Yule",
+            date: "21-22 de Diciembre",
+            description: "Solsticio de Invierno, la noche más larga del año. Celebra el renacimiento del sol y la promesa de días más luminosos.",
+            ritual: "Decora un árbol con símbolos de tus deseos para el año nuevo, enciende velas para atraer la luz y comparte alimentos con seres queridos."
+        },
+        // Agregar datos para los otros sabbats...
+    };
+    
+    sabbaths.forEach(sabbath => {
+        Sabbath.addEventListener('click', function() {
+            const sabbathName = this.classList[1];
+            const data = sabbathData[sabbathName];
+            
+            if (data) {
+                sabbathInfo.innerHTML = `
+                    <h3>${data.title}</h3>
+                    <p class="sabbath-date">${data.date}</p>
+                    <p class="sabbath-description">${data.description}</p>
+                    <div class="sabbath-ritual">
+                        <h4>Ritual sugerido:</h4>
+                        <p>${data.ritual}</p>
+                    </div>
+                `;
+                
+                // Quitar clase active de todos
+                sabbaths.forEach(s => s.classList.remove('active'));
+                // Agregar clase active al seleccionado
+                this.classList.add('active');
+            }
+        });
+    });
+});
+
+
+
+
+
+
 
 
 
